@@ -5,18 +5,18 @@
 #include <fstream>
 #include <sstream>
 
-FoodDatabase::FoodDatabase()
-{
-   // vectors initialize empty by default
-}
-
-FoodDatabase::~FoodDatabase()
-{
-   // empty is fine
-}
+/**************************
+ FOOD_DATABASE: DEFAULT CONSTRUCTOR
+ **************************/
+FoodDatabase::FoodDatabase() { } // vectors initialize empty by default
 
 /**************************
- FOOD_DATABASE: LOADFROMFILE
+ FOOD_DATABASE: DESTRUCTOR
+ **************************/
+FoodDatabase::~FoodDatabase() { }
+
+/**************************
+ FOOD_DATABASE: LOAD_FROM_FILE
  **************************/
 void FoodDatabase::loadFromFile(std::string filename)
 {
@@ -62,7 +62,16 @@ void FoodDatabase::loadFromFile(std::string filename)
 }
 
 /**************************
- FOOD_DATABASE: DISPLAYALLFOODS
+ FOOD_DATABASE: SAVE_SHOPPING_LIST
+ **************************/
+void FoodDatabase::saveShoppingList(std::string filename)
+{
+   
+}
+
+
+/**************************
+ FOOD_DATABASE: DISPLAY_ALL_FOODS
  **************************/
 void FoodDatabase::displayAllFoods()
 {

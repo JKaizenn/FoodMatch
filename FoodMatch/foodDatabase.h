@@ -12,7 +12,7 @@ public:
    ~FoodDatabase();
    
    // I/O Methods
-   void loadFromFile(std::string filename);
+   void loadFromFile(std::string filename); // Done
    void saveShoppingList(std::string filename);
    
    // Search
