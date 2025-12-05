@@ -1,14 +1,18 @@
-//
-//  main.cpp
-//  FoodMatch
-//
-//  Created by Jessen Forbush on 12/5/25.
-//
-
 #include <iostream>
+#include <string>
+#include <fstream>
+#include "food.h"
+#include "foodDatabase.h"
 
-int main(int argc, const char * argv[]) {
-   // insert code here...
-   std::cout << "Hello, World!\n";
-   return EXIT_SUCCESS;
+/**************************
+ * MAIN
+ **************************/
+int main()
+{
+   FoodDatabase db;
+   std::cout << "Welcome to this Food Matching Program!\n" << "\n";
+   db.loadFromFile("/Users/jforbush/Dev/C++/Personal_Projects/FoodMatch/FoodMatch/foodData.txt");
+   db.displayAllFoods();
+   
+   return 0;
 }
