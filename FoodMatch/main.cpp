@@ -121,7 +121,7 @@ void shopMenu(FoodDatabase& db)
          case 4:
          {
             std::string filename;
-            std::cout << "Enter filename: " << "\n";
+            std::cout << "Enter filename: " << "\n"; // Enter a file path here: Example: /Users/yourUsername/Dev/C++/Personal_Projects/FoodMatch/FoodMatch/shopList.txt
             std::cin >> filename;
             db.saveShoppingList(filename);
             break;
@@ -143,7 +143,7 @@ void shopMenu(FoodDatabase& db)
 int main()
 {
    FoodDatabase db;
-   db.loadFromFile("/Users/jforbush/Dev/C++/Personal_Projects/FoodMatch/FoodMatch/foodData.txt");
+   db.loadFromFile(""); // Enter a file path here: Example: /Users/yourUsername/Dev/C++/Personal_Projects/FoodMatch/FoodMatch/foodData.txt
    
    uint option = {0};
    while (option != 5)
@@ -181,7 +181,7 @@ int main()
          case 4:
          {
          std::string filepath;
-         std::cout << "Enter file path: " << '\n';
+         std::cout << "Enter file path: " << '\n'; // Enter a file path here: Example: /Users/yourUsername/Dev/C++/Personal_Projects/FoodMatch/FoodMatch/foodData.txt
          std::cin >> filepath;
          db.loadFromFile(filepath);
          break;
