@@ -29,6 +29,7 @@ void searchMenu(FoodDatabase& db)
       << "3. Search by Category\n"
       << "4. Back to Main Menu\n"
       << "Choice: ";
+      clearScreen();
       std::cin >> searchOption;
       
       switch (searchOption)
@@ -86,6 +87,7 @@ void shopMenu(FoodDatabase& db)
       << "4. Save List to File\n"
       << "5. Back to Main Menu\n"
       << "Choice: ";
+      clearScreen();
       std::cin >> shopOption;
       
       switch (shopOption)

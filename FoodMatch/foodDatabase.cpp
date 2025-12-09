@@ -107,6 +107,7 @@ void FoodDatabase::findExactMatch(std::string name)
       {
          std::cout << "Found: " << foods[i].getName() << '\n';
          std::cout << "Position: " << (i + 1) << '\n';
+         found = true;
          break;
       }
    }
@@ -128,7 +129,7 @@ void FoodDatabase::findCloseMatch(std::string name)
    
    // Convert input to lowercase
    std::string lowerInput = name;
-   for (int i = 0; i < foods.size(); i++)
+   for (int i = 0; i < lowerInput.size(); i++)
    {
       lowerInput[i] = std::tolower(lowerInput[i]);
    }
