@@ -17,20 +17,21 @@ public:
    
    // Search
    void findExactMatch(std::string);
-   void findCloseMatch(std::vector<Food> name);
-   void findByCategory(std::vector<Food> category);
+   void findCloseMatch(std::string name);
+   void findByCategory(std::string category);
    
-   // Shopping list
-   void addToShoppingList(Food item);
-   void displayShoppingList();
-   
+   // Shopping list 
+   void addToShoppingList(int index);
+   void removeFromShopList(int index);
+
    // Display
    void displayAllFoods();
-   
+   void displayAllFoodsNumbered();
+   void displayShoppingList();
    
 private:
    std::vector<Food> foods;
    std::vector<Food> category;
-   
+   std::vector<Food> shoppingList;
 };
 #endif

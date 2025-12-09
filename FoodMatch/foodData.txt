@@ -19,3 +19,4 @@ greek yogurt,100,dairy
 orange,62,fruit
 avocado,240,fruit
 bread,79,grain
+banana bread, 360, grain
