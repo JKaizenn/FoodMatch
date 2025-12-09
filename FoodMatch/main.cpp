@@ -72,7 +72,7 @@ void searchMenu(FoodDatabase& db)
 }
 
 /**************************
- * SEARCH_MENU
+ * SHOP_MENU
  **************************/
 void shopMenu(FoodDatabase& db)
 {
